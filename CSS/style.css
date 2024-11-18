@@ -1,0 +1,212 @@
+:root {
+  --maincolor: #0078ff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-text {
+  color: var(--maincolor) !important;
+}
+
+.main-bg {
+  background-color: var(--maincolor) !important;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+.header-line {
+  border-bottom: 4px solid var(--maincolor);
+  width: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Nav */
+nav {
+  background-color: #040404;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+nav .nav-list {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+nav .nav-link span {
+  border-bottom: 2px solid transparent;
+  font-size: 14px;
+  width: 0%;
+}
+
+nav .active span {
+  border-bottom: 2px solid white;
+  transition: all 0.7s;
+  width: 100%;
+}
+/* End Nav */
+
+/* Start Home */
+header {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  overflow: auto;
+}
+
+.content {
+  min-width: 450px;
+}
+
+#home span{
+    font-size: 40px;
+}
+/* End Home */
+
+/* Start Services */
+.services-icon {
+  border: 10px solid var(--maincolor);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 40px auto;
+  transition: all 0.5s;
+}
+
+.inner:hover .services-icon,
+#contact .get-icons > div:hover {
+  background-color: var(--maincolor);
+  border-color: #cde1f8;
+  color: white;
+}
+/* End Services */
+
+/* Start Counter */
+#counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #3b8fee;
+  background-blend-mode: multiply;
+}
+
+.count-icon {
+  border: 10px solid #cde1f8;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+/* End Counter */
+
+/* Start Portfolio */
+#portfolio p {
+  font-size: 12px;
+}
+
+#portfolio .portfolio-icons {
+  border: 3px solid var(--maincolor);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#portfolio .inner img {
+  transition: all 1s;
+}
+
+#portfolio .inner:hover img {
+  transform: scale(1.4);
+}
+/* End Portfolio */
+
+/* Start Carousel */
+#carousel .carousel-indicators {
+  position: static;
+}
+
+#carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+#carousel,
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--maincolor);
+  background-blend-mode: multiply;
+}
+/* End Carousel */
+
+/* Start Blog */
+#blog .card-footer img {
+  width: 30px;
+}
+
+#blog .card-img-top {
+  cursor: pointer;
+}
+
+#blog a:hover {
+  color: var(--maincolor) !important;
+}
+
+#blog figure .travel-overlay{
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/* End Blog */
+
+/* Start Contact */
+#contact .get-icons > div {
+  border: 4px solid #0078ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+#contact button {
+  border: 4px solid transparent ;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#contact button:hover {
+  border: 4px solid #cde1f8;
+  background-color: #0077ffb4 !important;
+}
+
+#contact .header-line {
+  width: 20%;
+}
+/* End Contact */
